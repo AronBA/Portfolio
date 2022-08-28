@@ -6,9 +6,19 @@
 
 }
 
+#home p {
+    color: #c3c3d2;
+}
+.quote{
+    color: #cbcbcb;
+    font-size: x-large;
+    font-style: italic;
+}
+
 nav{
     color: #FFFFFF;
     font-size: 1.5em;
+    position: fixed;
 
 }
 nav a{
@@ -40,6 +50,7 @@ body {
     animation: gradient 15s ease infinite;
     height: 100vh;
     font-family: 'Kanit', sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 @keyframes gradient {
@@ -66,9 +77,10 @@ h1 {
 }
 #toppicture{
     width: 14vw;
-    clip-path: circle(49%);
+    clip-path: circle(50%);
 
 }
+
 #title{
     background-color: var(--blue2);
 }
@@ -87,27 +99,12 @@ h1 {
     background: #afafaf;
     box-shadow: inset 0 0 5px #000000;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    animation: 2s ease-out 0s 1 slideInTop;
-}
 
-.sticky + .content {
-    padding-top: 102px;
-
-}
 /* quick reset and base styles */
 * {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-html {
-    font-family: helvetica, arial, sans-serif;
 }
 
 
@@ -119,6 +116,7 @@ img {
     position: relative;
     width: 15vw;
     margin: 1vh;
+    cursor: pointer;
 }
 
 .img__description_layer {
@@ -152,14 +150,35 @@ img {
 .img__wrap:hover .img__description {
     transform: translateY(0);
 }
-.neo {
+.flex {
     display: flex;
+    justify-content: center;
 
 }
 .srcicon{
     height: 5vh;
     width: auto;
 }
-.test{
+#home{
+    padding-top: 10vh;
     height: 90vh;
+
+}
+#left{
+    position: absolute;
+    left: 42%;
+    top: 23%;
+    height: 20vh;
+    width: 0.5vw;
+    background: #ffffff;
+    clip-path: circle(50%);
+}
+#right{
+    position: absolute;
+    right: 42%;
+    top: 23%;
+    height: 20vh;
+    width: 0.5vw;
+    background: #ffffff;
+    clip-path: circle(50%);
 }
