@@ -18,7 +18,8 @@
 nav{
     color: #FFFFFF;
     font-size: 1.5em;
-    position: fixed;
+    margin: 2% 2%;
+
 
 }
 nav a{
@@ -48,6 +49,7 @@ body {
     background: linear-gradient(-45deg, var(--blue1), #0e1226, #180f1f, var(--blue2));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+
     height: 100vh;
     font-family: 'Kanit', sans-serif;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -115,7 +117,7 @@ img {
 .img__wrap {
     position: relative;
     width: 15vw;
-    margin: 1vh;
+    margin: 5% 2%;
     cursor: pointer;
 }
 
