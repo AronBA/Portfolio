@@ -3,11 +3,11 @@
     src: url(/static/font/Kanit/Kanit-Medium.ttf);
 }
 :root{
-    --lightgrey: #838383;
+    --lightgrey: #3d3d3d;
     --grey: #111111;
     --darkgrey: #282828;
     --red: #EC625F;
-    --white: #bebebe;
+    --white: #ffffff;
 }
 html{
     color: var(--white);
@@ -19,6 +19,7 @@ body{
     background: var(--darkgrey);
 }
 nav *{
+    height: 40vh;
     margin: 1%;
     font-size: 2em;
 
@@ -74,7 +75,7 @@ a:active {
 
 #title{
     text-align: center;
-    height: 30vh;
+    height: 60vh;
 }
 #home{
     font-weight: bold;
@@ -82,6 +83,11 @@ a:active {
 }
 #home:hover{
     border-bottom: 2px solid var(--red);
+}
+
+
+#arrowdown *:hover{
+
 }
 #topbutton *{
     position: fixed;
@@ -92,6 +98,53 @@ a:active {
 #topbutton *:hover{
     animation: up 1s ;
 }
+#quote{
+    animation: textanimation 8s infinite;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: var(--darkgrey);
+    color: var(--white);
+}
+
+input[type=submit] {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ab4545;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: var(--lightgrey);
+    padding: 20px;
+}
+
+.source{
+    color: var(--red)!important;
+    margin: 0 0.2%;
+}
+.source:hover{
+    color: #ab4545!important;
+}
+.tec{
+    color: var(--red);
+    font-size: 1em;
+    margin: 0 0.2%;
+}
 
 
 @keyframes up {
@@ -99,7 +152,16 @@ a:active {
     50% {bottom: 1%}
     100% {bottom: 0%}
 }
-
+@keyframes textanimation {
+    0%{opacity: 100%}
+    50%{opacity: 20%}
+    100%{opacity: 100%}
+}
+@keyframes down {
+    0%   {bottom: 0}
+    50% {bottom: 1%}
+    100% {bottom: 0%}
+}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -109,9 +171,10 @@ a:active {
 
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--grey);
+    background: var(--red);
 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--grey);
+    background: var(--red);
+
 }
