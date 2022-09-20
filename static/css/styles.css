@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Kanit;
+    font-family: Roboto;
     src: url(/static/fonts/Roboto/Roboto-Regular.ttf);
 }
 :root{
@@ -12,7 +12,7 @@
 html{
     color: var(--white);
     scroll-behavior: smooth;
-    font-family: Kanit;
+    font-family: Roboto;
 
 }
 body{
