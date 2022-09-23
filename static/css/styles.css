@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(/static/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(portfolio/static/fonts/Roboto/Roboto-Regular.ttf);
 }
 :root{
     --lightgrey: #3d3d3d;
