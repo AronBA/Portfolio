@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST)){
+if(isset($_POST["submit"])){
     $name = $_POST["name"];
     $email = $_POST["email"];
     $text = $_POST["subject"];
@@ -8,6 +8,8 @@ if(isset($_POST)){
     $mailto = "contact@aronba.dev";
     $header = "From: $email";
     $msg = "$name hat dich über aronba.dev kontaktiert!\n\n$subject";
+
+
     mail($mailto,$subject,$msg,$header);
     $header("Location: ../index.php?mailsend");
 
