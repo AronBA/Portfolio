@@ -2,16 +2,17 @@
 
 if(isset($_POST["submit"])){
     $name = $_POST["name"];
+    $subject = "$name kontaktaufnahme";
     $email = $_POST["email"];
     $text = $_POST["subject"];
-    $subject = "$name kontaktaufnahme";
 
     $mailto = "contact@aronba.dev";
-    $header = "From: $email";
+    $headers = "From: $email";
     $msg = "$name hat dich über aronba.dev kontaktiert!\n\n$text";
 
 
-    mail($mailto,$subject,$msg,$header);
-    header("Location: ../index.html?mailsend");
+    mail($mailto,$subject,$msg,$headers);
+    header("location: ../index.html?mailsend");
+    exit;
 
 }
