@@ -10,7 +10,7 @@
     <link rel="manifest" href="static/favicon/site.webmanifest">
     <meta content="Aron Baur" property="og:title" />
     <meta content="Mein aktuelles Portfolio" property="og:description" />
-    <meta content="https://aronba.dev/#" property="og:url" />
+    <meta content="https://aronba.dev/" property="og:url" />
     <meta content="https://aronba.dev/static/favicon/android-chrome-512x512.png" property="og:image" />
     <meta content="#EC625F" data-react-helmet="true" name="theme-color" />
 
@@ -69,13 +69,13 @@
     <h3 id="contact">Kontakt</h3>
     <p>Hier kannst du mir eine Nachricht Senden </p>
     <div class="container">
-        <form action="">
+        <form action="backend/contact.php" method="post">
 
-            <label for="fname">Vorname</label>
-            <input type="text" id="fname" name="firstname" placeholder="Dein Name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name">
 
-            <label for="lname">Nachname</label>
-            <input type="text" id="lname" name="lastname" placeholder="Dein Nachname">
+            <label for="email">EMail</label>
+            <input type="email" id="email" name="email" placeholder="Deine EMail">
 
             <label for="subject">Nachricht</label>
             <textarea id="subject" name="subject" placeholder="Schreib mir etwas..." style="height:200px"></textarea>
