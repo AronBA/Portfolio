@@ -36,6 +36,16 @@ section{
 div{
     margin: 0 0 5% 0;
 }
+footer *{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--red)!important;
+    margin: 1% 0.2%;
+}
+footer *:hover{
+
+    color: #ab4545!important;
+}
 h1{
     font-size: 5em;
 }
