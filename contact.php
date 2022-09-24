@@ -11,9 +11,9 @@ if(isset($_POST["submit"])){
     $headers = "From: $email";
     $msg = "$name hat dich über aronba.dev kontaktiert!\n\n$text";
 
-    echo "mail send";
+
     mail($mailto,$subject,$msg,$headers);
-    echo "mail true";
+
     header("location: index.html?mailsend");
     exit;
 
