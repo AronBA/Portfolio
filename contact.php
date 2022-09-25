@@ -2,10 +2,10 @@
 
 if(isset($_POST["submit"])){
     echo "mail send";
-    $name = $_POST["name"];
+    $name = htmlspecialchars(stripcslashes(($_POST["name"])));
     $subject = "$name kontaktaufnahme";
-    $email = $_POST["email"];
-    $text = $_POST["subject"];
+    $email =  htmlspecialchars(stripcslashes(($_POST["email"])));
+    $text =  htmlspecialchars(stripcslashes(($_POST["subject"])));
 
     $mailto = "contact@aronba.dev";
     $headers = "From: $email";
