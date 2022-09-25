@@ -22,7 +22,7 @@
 <nav>
     <a href="index.html#" id="home">Home</a>
     <a href="index.html#projects">Projekte</a>
-    <a href=index.html#about">Über mich</a>
+    <a href="index.html#about">Über mich</a>
     <a href="index.html#files">Unterlagen</a>
     <a href="index.html#contact">Kontakt</a>
 </nav>
@@ -93,13 +93,13 @@
         <form action="" method="post">
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Dein Name">
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Deine Email">
+            <input type="email" id="email" name="email" placeholder="Deine Email" required>
 
             <label for="subject">Nachricht</label>
-            <textarea id="subject" name="subject" placeholder="Schreib mir etwas..." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Schreib mir etwas..." style="height:200px" required></textarea>
 
             <input type="submit" value="Submit" name="submit">
         </form>

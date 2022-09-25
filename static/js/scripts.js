@@ -1,14 +1,15 @@
 
-const scrollTop = document.getElementById('topbutton')
-window.onload = () => {
-    scrollTop.style.opacity = 0;
-}
-window.onscroll = () => {
-    if (window.scrollY > 200) {
-        scrollTop.style.opacity = 1;
-        //scrollTop.style.animation = "up2 2s infinite";
-    } else {
-        scrollTop.style.opacity = 0;
-    }
-};
 
+const scrollTop = document.getElementById('topbutton').classList;
+
+const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting || entries[0].boundingClientRect.y < 0){
+        scrollTop.add("buttonshow")
+
+
+    } else {
+        scrollTop.remove("buttonshow")
+
+    }
+})
+observer.observe(document.getElementById("projects"));

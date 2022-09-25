@@ -102,19 +102,23 @@ a:active {
 }
 
 
-#arrowdown *:hover{
 
-}
 #topbutton *{
     position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 2%;
-    animation: up2;
+    right: 50px;
+    bottom: -100px;
 }
-#topbutton *:hover{
-    animation: up 1s ;
+
+#sex *:hover{
+    animation: up 500ms ;
 }
+.buttonshow *{
+    animation: up2 500ms  ;
+}
+
+
+
+
 
 #quote{
     font-size: 3.5em;
@@ -122,7 +126,7 @@ a:active {
 }
 
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email] {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
@@ -162,10 +166,6 @@ input[type=submit]:hover {
     color: #ab4545!important;
 }
 
-@keyframes up2 {
-    0%   {bottom: -10%}
-    100% {bottom: 0}
-}
 
 @keyframes up {
     0%   {bottom: 0}
@@ -188,6 +188,7 @@ input[type=submit]:hover {
 }
 ::-webkit-scrollbar-thumb {
     background: var(--red);
+
 
 }
 ::-webkit-scrollbar-thumb:hover {
