@@ -1,18 +1,12 @@
-
-
-const scrollTop = document.getElementById('topbutton');
-
-
-const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting || entries[0].boundingClientRect.y < 0){
-
-        scrollTop.add("buttonshow");
-
+const scrollTop = document.getElementById('topbutton')
+window.onload = () => {
+    scrollTop.style.opacity = 0;
+}
+window.onscroll = () => {
+    if (window.scrollY > 200) {
+        scrollTop.style.opacity = 1;
 
     } else {
-
-        scrollTop.remove("buttonshow");
-
+        scrollTop.style.opacity = 0;
     }
-})
-observer.observe(document.getElementById("projects"));
+};

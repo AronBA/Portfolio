@@ -105,12 +105,13 @@ a:active {
 
 #topbutton *{
     position: fixed;
-    right: 50px;
-    bottom: 50px;
-    transform: translateY(100px);
+    right: 0;
+    bottom: 0;
+    margin: 2%;
+    animation: up2;
 }
-.buttonshow{
-    transform: translateY(0px);
+#topbutton *:hover{
+    animation: up 1s ;
 }
 
 
@@ -166,7 +167,7 @@ input[type=submit]:hover {
 @keyframes up {
     0%   {bottom: 0}
     50% {bottom: 1%}
-    100% {bottom: 0%}
+    100% {bottom: 0}
 }
 
 @keyframes down {
