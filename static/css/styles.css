@@ -106,16 +106,12 @@ a:active {
 #topbutton *{
     position: fixed;
     right: 50px;
-    bottom: -100px;
+    bottom: 50px;
+    transform: translateY(100px);
 }
-
-#sex *:hover{
-    animation: up 500ms ;
+.buttonshow{
+    transform: translateY(0px);
 }
-.buttonshow *{
-    animation: up2 500ms  ;
-}
-
 
 
 

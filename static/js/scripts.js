@@ -1,14 +1,17 @@
 
 
-const scrollTop = document.getElementById('topbutton').classList;
+const scrollTop = document.getElementById('topbutton');
+
 
 const observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting || entries[0].boundingClientRect.y < 0){
-        scrollTop.add("buttonshow")
+
+        scrollTop.add("buttonshow");
 
 
     } else {
-        scrollTop.remove("buttonshow")
+
+        scrollTop.remove("buttonshow");
 
     }
 })
