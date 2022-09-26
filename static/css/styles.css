@@ -202,6 +202,14 @@ input[type=submit]:hover {
         transform: translateX(0);
     }
 }
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -222,10 +230,13 @@ input[type=submit]:hover {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
    nav *{
-       font-size: 4.5em;
+       font-size: 4em;
    }
     #title{
-        margin: 0;
-        height: 20vh;
+
+        height: 25vh;
+    }
+    section *{
+        animation: 3s ease-out 0s 1 slideInBottom;
     }
 }
