@@ -10,3 +10,4 @@ window.onscroll = () => {
         scrollTop.style.opacity = 0;
     }
 };
+
