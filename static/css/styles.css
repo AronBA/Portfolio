@@ -7,7 +7,7 @@
     --grey: #111111;
     --darkgrey: #282828;
     --red: #EC625F;
-    --white: #ffffff;
+    --white: #c9c9c9;
 }
 html{
     color: var(--white);
@@ -68,6 +68,7 @@ h3{
 h4{
     margin-bottom: 1%;
     font-size: 3em;
+
 
 }
 img{
@@ -219,3 +220,12 @@ input[type=submit]:hover {
 
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   nav *{
+       font-size: 4.5em;
+   }
+    #title{
+        margin: 0;
+        height: 20vh;
+    }
+}
