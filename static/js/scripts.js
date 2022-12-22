@@ -10,4 +10,14 @@ window.onscroll = () => {
         scrollTop.style.opacity = 0;
     }
 };
-
+const obsv = new IntersectionObserver((entries => {
+    entries.forEach((entry) =>{
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        } else{
+            entry.target.classList.remove("show");
+        }
+    });
+}))
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => obsv.observe(el));
