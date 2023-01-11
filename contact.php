@@ -13,12 +13,26 @@ if(isset($_POST["submit"])){
 
 
 
-    if (mail($mailto,$subject,$msg,$headers)){
-        header("location: index.html?mailsend");
+    if(!isset($_POST['span'])) {
+        if (mail($mailto,$subject,$msg,$headers)){
+            header("location: index.html?mailsend");
+            exit;
+        }
+        header("location: index.html?mailnotsend");
+        exit;
+    } else {
+        $subject = "**Spam**";
+        if (mail($mailto,$subject,$msg,$headers)){
+            header("location: index.html?mailsend");
+            exit;
+        }
+        header("location: index.html?mailnotsend");
         exit;
     }
-    header("location: index.html?mailnotsend");
-    exit;
+
+
+
+
 
 } else {
     header("location: index.html");
